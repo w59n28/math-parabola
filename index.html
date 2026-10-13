@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คลังใบงานคณิตศาสตร์ - เรื่อง พาราโบลา</title>
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-color: #1f2937;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #818cf8);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+        header h1 { margin: 0 0 0.5rem 0; font-size: 2.2rem; }
+        header p { margin: 0; font-size: 1.1rem; opacity: 0.9; }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 0.5rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-top: 0; color: var(--primary-color); }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+        .btn:hover { background-color: #4338ca; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>คลังใบงานคณิตศาสตร์</h1>
+        <p>แหล่งรวมใบงาน แบบฝึกหัด และสรุปเนื้อหาเรื่อง พาราโบลา ม.ต้น และ ม.ปลาย</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">ใบงานทั้งหมด</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>ใบงานที่ 1: ความรู้พื้นฐานพาราโบลา</h3>
+                <p>ทำความรู้จักกราฟพาราโบลา คว่ำ/หงาย จุดยอด และแกนสมมาตร พร้อมโจทย์พื้นฐาน</p>
+                <a href="#" class="btn">ดาวน์โหลด PDF</a>
+            </div>
+            <div class="card">
+                <h3>ใบงานที่ 2: รูปstandardของสมการ</h3>
+                <p>ฝึกจัดรูปสมการพาราโบลา $y = ax^2 + bx + c$ และการหาจุดวกกลับ</p>
+                <a href="#" class="btn">ดาวน์โหลด PDF</a>
+            </div>
+            <div class="card">
+                <h3>ใบงานที่ 3: โจทย์ปัญหาพาราโบลา</h3>
+                <p>โจทย์ประยุกต์สถานการณ์จริง การเคลื่อนที่ของวัตถุ และค่าสูงสุด-ต่ำสุด</p>
+                <a href="#" class="btn">ดาวน์โหลด PDF</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Math Worksheets. สร้างขึ้นเพื่อการเรียนการสอนคณิตศาสตร์</p>
+    </footer>
+
+</body>
+</html>
